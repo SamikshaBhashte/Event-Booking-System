@@ -1,0 +1,178 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+    
+    }
+}
+
+ .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #003366;
+      background-color: #e6f0ff;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid #007BFF;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: bold;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-block {
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 30px;
+      background-color: #f9f9f9;
+    }
+    .section-block h2 {
+      border: 2px solid #007BFF;
+      padding: 8px 16px;
+      display: block;
+      border-radius: 6px;
+      //background-color: #e6f0ff;
+      color: #003366;
+      text-align: center;
+      margin: 0 auto;
+      width: fit-content;
+    }
+.calendar-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-controls button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#month-year {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.day-names,
+#calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day-names div {
+  font-weight: bold;
+  text-align: center;
+  background-color: #ecf0f1;
+  padding: 8px 0;
+  border-radius: 4px;
+}
+
+#calendar-days div {
+  padding: 12px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.no-event-day {
+  background-color: #d4fcd4;
+}
+
+.event-day {
+  background-color: #ffcccc;
+  color: red;
+}
+
+.selected-day {
+  outline: 2px solid #000;
+}
+
+.legend {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.legend span {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.no-event {
+  background-color: #d4fcd4;
+}
+
+.event {
+  background-color: #ffcccc;
+}
+
+#selected-date {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-section,
+.upcoming-section {
+  margin-top: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background: #eaf2f8;
+  border-radius: 10px;
+}
+
+form input,
+form select,
+form button {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #27ae60;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.event-card {
+  padding: 15px;
+  background-color: #fef5e7;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.event-card button {
+  background-color: #2980b9;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+}

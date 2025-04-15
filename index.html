@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Booking System</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1>📅 Event Booking System</h1>
+
+    <div class="section-block">
+      <h2>Calendar</h2>
+      <div class="calendar-controls">
+        <button onclick="prevMonth('prevYear')">&laquo;</button>
+        <button onclick="prevMonth('prevMonth')">&lsaquo;</button>
+        <div id="month-year"></div>
+        <button onclick="nextMonth('nextMonth')">&rsaquo;</button>
+        <button onclick="nextMonth('nextYear')">&raquo;</button>
+      </div>
+      <div class="calendar">
+        <div class="day-names">
+          <div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div><div>Sun</div>
+        </div>
+        <div id="calendar-days"></div>
+      </div>
+      <div class="legend">
+        <span class="no-event">No Event</span>
+        <span class="event">Event</span>
+      </div>
+      <div id="selected-date"></div>
+    </div>
+
+    <div class="section-block">
+      <h2>📌 Book Event</h2>
+      <form id="event-form">
+        <input type="text" placeholder="Name*" required>
+        <input type="email" placeholder="Email*" required>
+        <input type="tel" placeholder="Contact Number*" required>
+        <input type="text" placeholder="Event Date*" id="event-date" required>
+        <select required>
+          <option value="">-- Select Event Type --</option>
+          <option value="Workshop">Workshop</option>
+          <option value="Conference">Conference</option>
+          <option value="Seminar">Seminar</option>
+        </select>
+        <button type="submit">Book Event</button>
+      </form>
+    </div>
+
+    <div class="section-block">
+      <h2>📢 Upcoming Events</h2>
+      <div class="event-card">
+        <h3>Apr 20<br>Technical Workshop</h3>
+        <p>📍 <strong>Venue:</strong> Lab 4</p>
+        <p>⏰ <strong>Time:</strong> 10:00 AM - 5:00 PM</p>
+        <button>Book Now</button>
+      </div>
+      <div class="event-card">
+        <h3>Apr 25<br>Team Conference</h3>
+        <p>📍 <strong>Venue:</strong> Hall 1</p>
+        <p>⏰ <strong>Time:</strong> 11:00 AM - 3:00 PM</p>
+        <button>Book Now</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
